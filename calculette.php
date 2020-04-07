@@ -1,7 +1,18 @@
 <?php
 
+$operator = $argv[2];
+$operant1 = $argv[1];
+$operant2 = $argv[3];
 
-$a = 7;
-$b = 3;
-$addition = $a + $b;
-echo ($addition);
+switch ($operator) {
+	case '+':
+		$resultat = $operant1 + $operant2;
+	case '-':
+		$resultat = $operant1 - $operant2;
+	case '*':
+		$resultat = $operant1 * $operant2;
+	case '/':
+		$resultat = $operant1 / $operant2;
+}
+
+echo ($resultat);
