@@ -8,17 +8,24 @@ $operant2 = $argv[3];
 //var_dump($argv);
 
 
-function additionner($operant1, $operant2){
+function add($operant1, $operant2)
+{
     $addition = $operant1 + $operant2;
     return $addition;
 }
 
+function substract($operant1, $operant2)
+{
+    $substract = $operant1 - $operant2;
+    return $substract;
+}
+
 switch ($operator) {
 	case '+':
-		$resultat = additionner($operant1, $operant2);
+		$resultat = add($operant1, $operant2);
 		break;
 	case '-':
-		$resultat = $operant1 - $operant2;
+		$resultat = substract($operant1, $operant2);
 		break;
 	case '*':	
 		$resultat = $operant1 * $operant2;
