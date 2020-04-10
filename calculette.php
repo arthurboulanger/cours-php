@@ -43,6 +43,10 @@ switch ($operator) {
 		$resultat = multiply($operant1, $operant2);
 		break;
 	case '/':
+		if ($operant2 == 0) {
+		echo "No se puede amigo lo siento :-)";
+		}
+		else
 		$resultat = divide($operant1, $operant2);
 		break;
 }
