@@ -7,14 +7,20 @@ $operant2 = $argv[3];
 //var_dump($operator);
 //var_dump($argv);
 
+
+function additionner($operant1, $operant2){
+    $addition = $operant1 + $operant2;
+    return $addition;
+}
+
 switch ($operator) {
 	case '+':
-		$resultat = $operant1 + $operant2;
+		$resultat = additionner($operant1, $operant2);
 		break;
 	case '-':
 		$resultat = $operant1 - $operant2;
 		break;
-	case '*':
+	case '*':	
 		$resultat = $operant1 * $operant2;
 		break;
 	case '/':
