@@ -26,6 +26,12 @@ function multiply($operant1, $operant2)
     return $multiply;
 }
 
+function divide($operant1, $operant2)
+{
+    $divide = $operant1 / $operant2;
+    return $divide;
+}
+
 switch ($operator) {
 	case '+':
 		$resultat = add($operant1, $operant2);
@@ -37,7 +43,7 @@ switch ($operator) {
 		$resultat = multiply($operant1, $operant2);
 		break;
 	case '/':
-		$resultat = $operant1 / $operant2;
+		$resultat = divide($operant1, $operant2);
 		break;
 }
 
