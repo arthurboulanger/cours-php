@@ -8,27 +8,31 @@ $operant2 = $argv[3];
 //var_dump($argv);
 
 
-function add($operant1, $operant2)
+function add($valeur1, $valeur2)
 {
-    $addition = $operant1 + $operant2;
+    $addition = $valeur1 + $valeur2;
     return $addition;
 }
 
-function substract($operant1, $operant2)
+function substract($valeur1, $valeur2)
 {
     $substract = $operant1 - $operant2;
     return $substract;
 }
 
-function multiply($operant1, $operant2)
+function multiply($valeur1, $valeur2)
 {
     $multiply = $operant1 * $operant2;
     return $multiply;
 }
 
-function divide($operant1, $operant2)
+function divide($numerateur, $denominateur)
 {
-    $divide = $operant1 / $operant2;
+	if ($denominateur == 0) {
+		echo "No se puede amigo, lo siento :-)";
+		}
+		else
+    $divide = $numerateur / $denominateur;
     return $divide;
 }
 
@@ -43,10 +47,6 @@ switch ($operator) {
 		$resultat = multiply($operant1, $operant2);
 		break;
 	case '/':
-		if ($operant2 == 0) {
-		echo "No se puede amigo lo siento :-)";
-		}
-		else
 		$resultat = divide($operant1, $operant2);
 		break;
 }
