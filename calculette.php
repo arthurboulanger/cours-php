@@ -20,6 +20,12 @@ function substract($operant1, $operant2)
     return $substract;
 }
 
+function multiply($operant1, $operant2)
+{
+    $multiply = $operant1 * $operant2;
+    return $multiply;
+}
+
 switch ($operator) {
 	case '+':
 		$resultat = add($operant1, $operant2);
@@ -28,7 +34,7 @@ switch ($operator) {
 		$resultat = substract($operant1, $operant2);
 		break;
 	case '*':	
-		$resultat = $operant1 * $operant2;
+		$resultat = multiply($operant1, $operant2);
 		break;
 	case '/':
 		$resultat = $operant1 / $operant2;
